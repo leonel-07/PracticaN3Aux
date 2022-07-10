@@ -3,9 +3,10 @@ import Style from './About.module.scss';
 import Terminal from "./Terminal";
 import {Box} from "@mui/material";
 import {info} from "../../info/Info";
+import { PropTypes } from 'prop-types';
 
 
-export default function About() {
+export default function About({Biografia=info.bio}) {
     const firstName = info.firstName.toLowerCase()
 
     function aboutMeText() {
@@ -14,7 +15,7 @@ export default function About() {
                 about{firstName} </p>
             <p><span style={{color: info.baseColor}}>about{firstName} <span
                 className={Style.green}>(main)</span> $ </span>
-                {info.bio}
+                {Biografia}
             </p>
         </>;
     }
@@ -58,3 +59,6 @@ export default function About() {
         </Box>
     )
 }
+About.prototype = {
+    Biografia: PropTypes.string,
+ }

@@ -2,8 +2,8 @@ import self from "../img/perfil.jpg"
 export let colors = ['#004E9A', ' #428CD4'];
 
 export const info = {
-    firstName: "Edson Olmedo",
-    lastName: "Smith",
+    firstName: "Leonel",
+    lastName: "Quispe",
     position: "a Full Stack Developer",
     selfPortrait: self,
     gradient: `-webkit-linear-gradient(135deg, ${colors})`, 
@@ -19,11 +19,11 @@ export const info = {
         },
         {
             emoji: "💼",
-            text: "Software systems engineer"
+            text: "Systems engineer"
         },
         {
             emoji: "📧",
-            text: "olmedito.90@gmail.com"
+            text: "fer85leo85@gmail.com"
         }
     ],
     socials: [
@@ -49,7 +49,7 @@ export const info = {
         }
 
     ],
-    bio: ' Hello! I am Edson. I am a Systems Engineering student. I study at U.A.T.F, enjoy long walks with friends, and believe that artificial intelligence will inevitably rule us all one day. Put Study Desire to Matter!',
+    bio: ' Hello! I am Leonel. I am a Systems Engineering student. I study at U.A.T.F, enjoy long walks with friends, and believe that artificial intelligence will inevitably rule us all one day. Put Study Desire to Matter!',
     skills:
         {
             proficientWith: ['javascript', 'react', 'git', 'github', 'bootstrap', 'html5', 'css3', 'figma', 'storybook', 'sass'],

@@ -5,8 +5,9 @@ import Home from "./home/Home";
 import About from "./about/About";
 import {Route, Routes} from "react-router-dom";
 import {Box, Grid} from "@mui/material";
+import { PropTypes } from 'prop-types';
 
-export default function BaseLayout() {
+export default function BaseLayout({name}) {
    let [darkMode, setDarkMode] = useState(false);
 
    function handleClick() {
@@ -23,7 +24,7 @@ export default function BaseLayout() {
             </Grid>
             <Grid item flexGrow={1}  >
                <Routes>
-                  <Route exact path={'/'} element={<Home/>}/>
+                  <Route exact path={'/'} element={<Home name={name}/>}/>
                   <Route exact path={'/about'} element={<About/>}/>
                </Routes>
             </Grid>
@@ -38,4 +39,3 @@ export default function BaseLayout() {
       </Box>
    )
 }
-
